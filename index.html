@@ -1,0 +1,279 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RhythmoTune</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>RhythmoTune</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li class="side-icons">
+                        <img src="./assets/house.png" alt="">
+                        <a href="#">Home</a>
+                    </li>
+                    <!-- <li class="side-icons">
+                        <img src="./assets/menu.png" alt="">
+                        <a href="#">Categories</a>
+                    </li> -->
+                    <!-- <li class="side-icons">
+                        <img src="./assets/people.png" alt="">
+                        <a href="#">Artists</a>
+                    </li> -->
+                </ul>
+            </nav>
+            <div class="playlists">
+                <h3>Playlists</h3>
+                <ul>
+                    <li><a href="./80.html">80's Hits</a></li>
+                    <li><a href="./90.html">90's Hits</a></li>
+                    <li><a href="./00.html">00's Hits</a></li>
+                    
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header>
+                <div class="search-container">
+                    <input type="text" placeholder="Search for a song" class="search-input">
+                    <button class="search-btn">
+                        <img src="./assets/search.png" alt="Search Icon">
+                    </button>
+                </div>
+                <div class="profile">
+                    <div class="acccount-name">
+                        <span class="profile-name" style="padding-left: 3px;">Molly Hunter</span>
+                        <button class="premium">Premium</button>
+                    </div>
+                    <img src="./assets/user.png" alt="Profile" class="profile-pic">
+                    
+                </div>
+            </header>
+
+            <!-- Featured Section -->
+            <h3 class="new">Newest Releases</h3>
+            <section class="featured">
+                <div class="featured-card" data-src="./songs/Chand Sifarish - Fanaa 128 Kbps.mp3" data-name="Chand Sifarish" data-img="./assets/chand.jpg">
+                    <img src="./assets/chand.jpg" alt="Chand Sifarish" class="featured-img">
+                    <div class="featured-details">
+                        <h2>Chand Sifarish</h2>
+                        <p>Shaan & Kailash Kher</p>
+                    </div>
+                </div>
+
+                <div class="featured-card" data-src="./songs/Ek Din Aap - Yes Boss 128 Kbps.mp3" data-name="Ek Din Aap" data-img="./assets/ek.jpg">
+                    <img src="./assets/ek.jpg" alt="Ek Din Aap" class="featured-img">
+                    <div class="featured-details">
+                        <h2>Ek Din Aap</h2>
+                        <p>Kumar Sanu & Alka Yagnik</p>
+                    </div>
+                </div>
+
+                <div class="featured-card" data-src="./songs/Kabhi Kabhi Aditi Zindagi - Jaane Tu.. Ya Jaane Na 128 Kbps.mp3" data-name="Kabhi Kabhi" data-img="./assets/kabhi.jpg">
+                    <img src="./assets/kabhi.jpg" alt="Kabhi Kabhi" class="featured-img">
+                    <div class="featured-details">
+                        <h2>Kabhi Kabhi</h2>
+                        <p>Rashid Ali</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Category Buttons -->
+            <!-- <section class="categories">
+                <h3 style="padding: 5px;">Categories</h3>
+                <div class="category-buttons">
+                    <button>All</button>
+                    <button>Relax</button>
+                    <button>Sad</button>
+                    <button>Party</button>
+                    <button>Romance</button>
+                    <button>Energetic</button>
+                    <button>Relaxing</button>
+                    <button>Jazz</button>
+                    <button>Alternative</button>
+                </div>
+            </section> -->
+
+            <!-- Song List -->
+            <section class="song-list">
+                <h3>Popular Songs</h3>
+                <div class="song-cards">
+                    <div class="song-card" data-src="./songs/O Sanam - Sunoh 128 Kbps.mp3" data-name="O Sanam" data-img="./assets/sanam.jpg">
+                        <img src="./assets/sanam.jpg" alt="O Sanam">
+                        <p>O Sanam<br><span>Lucky Ali</span></p>
+                    </div>
+
+                    <div class="song-card" data-src="./songs/Dilbar Mere - Satte Pe Satta 128 Kbps.mp3" data-name="Dilbar Mere" data-img="./assets/dilbar.jpg">
+                        <img src="./assets/dilbar.jpg" alt="Dilbar Mere">
+                        <p>Dilbar Mere
+                            <br>
+                            <span>Kishore Kumar</span>
+                        </p>
+                    </div>
+
+                    <!-- Add more song cards similarly -->
+                    <div class="song-card" data-src="./songs/Janu Meri Jaan - Shaan 128 Kbps.mp3" data-name="Janu Meri Jaan" data-img="./assets/Janu.jpg">
+                        <img src="./assets/Janu.jpg" alt="janu meri jaan">
+                        <p>Janu Meri Jaan<br><span>Kishore Kumar & Mohammad Rafi</span></p>
+                    </div>
+
+                    <div class="song-card" data-src="./songs/Hothon Se Chhu Lo Tum (From Prem Geet) - Prem Geet 128 Kbps.mp3" data-name="Hothon Se Chu Lo" data-img="./assets/hothon.jpg">
+                        <img src="./assets/hothon.jpg" alt="Hothon">
+                        <p>Hothon Se Chu Lo<br><span>Jagjit Singh</span></p>
+                    </div>
+                    
+                    <div class="song-card" data-src="./songs/Chaiyya Chaiyya - Dil Se 128 Kbps.mp3" data-name="Chaiyya Chaiyya" data-img="./assets/chaiyya.jpg">
+                        <img src="./assets/chaiyya.jpg" alt="Chaiyya Chaiyya">
+                        <p>Chaiyya Chaiyya<br><span>Sukhwinder Singh & Sapna Awasthi</span></p>
+                    </div>
+
+                    <div class="song-card" data-src="./songs/Tera Hone Laga Hoon - Ajab Prem Ki Ghazab Kahani 128 Kbps.mp3" data-name="Tera Hone Laga Hoon" data-img="./assets/tera.jpg">
+                        <img src="./assets/tera.jpg" alt="Tera Hone Laga Hoon">
+                        <p>Tera Hone Laga Hoon<br><span>Atif Aslam & Alisha Chinai</span></p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="song-list">
+                <h3>Popular Songs</h3>
+                <div class="song-cards">
+                    <div class="song-card" data-src="./songs/O Sanam - Sunoh 128 Kbps.mp3" data-name="O Sanam" data-img="./assets/sanam.jpg">
+                        <img src="./assets/sanam.jpg" alt="O Sanam">
+                        <p>O Sanam<br><span>Lucky Ali</span></p>
+                    </div>
+
+                    <div class="song-card" data-src="./songs/Dilbar Mere - Satte Pe Satta 128 Kbps.mp3" data-name="Dilbar Mere" data-img="./assets/dilbar.jpg">
+                        <img src="./assets/dilbar.jpg" alt="Dilbar Mere">
+                        <p>Dilbar Mere
+                            <br>
+                            <span>Kishore Kumar</span>
+                        </p>
+                    </div>
+
+                    <!-- Add more song cards similarly -->
+                    <div class="song-card" data-src="./songs/Janu Meri Jaan - Shaan 128 Kbps.mp3" data-name="Janu Meri Jaan" data-img="./assets/Janu.jpg">
+                        <img src="./assets/Janu.jpg" alt="janu meri jaan">
+                        <p>Janu Meri Jaan<br><span>Kishore Kumar & Mohammad Rafi</span></p>
+                    </div>
+
+                    <div class="song-card" data-src="./songs/Hothon Se Chhu Lo Tum (From Prem Geet) - Prem Geet 128 Kbps.mp3" data-name="Hothon Se Chu Lo" data-img="./assets/hothon.jpg">
+                        <img src="./assets/hothon.jpg" alt="Hothon">
+                        <p>Hothon Se Chu Lo<br><span>Jagjit Singh</span></p>
+                    </div>
+                    
+                    <div class="song-card" data-src="./songs/Chaiyya Chaiyya - Dil Se 128 Kbps.mp3" data-name="Chaiyya Chaiyya" data-img="./assets/chaiyya.jpg">
+                        <img src="./assets/chaiyya.jpg" alt="Chaiyya Chaiyya">
+                        <p>Chaiyya Chaiyya<br><span>Sukhwinder Singh & Sapna Awasthi</span></p>
+                    </div>
+
+                    <div class="song-card" data-src="./songs/Tera Hone Laga Hoon - Ajab Prem Ki Ghazab Kahani 128 Kbps.mp3" data-name="Tera Hone Laga Hoon" data-img="./assets/tera.jpg">
+                        <img src="./assets/tera.jpg" alt="Tera Hone Laga Hoon">
+                        <p>Tera Hone Laga Hoon<br><span>Atif Aslam & Alisha Chinai</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="song-list">
+                <h3>Popular Songs</h3>
+                <div class="song-cards">
+                    <div class="song-card" data-src="./songs/O Sanam - Sunoh 128 Kbps.mp3" data-name="O Sanam" data-img="./assets/sanam.jpg">
+                        <img src="./assets/sanam.jpg" alt="O Sanam">
+                        <p>O Sanam<br><span>Lucky Ali</span></p>
+                    </div>
+
+                    <div class="song-card" data-src="./songs/Dilbar Mere - Satte Pe Satta 128 Kbps.mp3" data-name="Dilbar Mere" data-img="./assets/dilbar.jpg">
+                        <img src="./assets/dilbar.jpg" alt="Dilbar Mere">
+                        <p>Dilbar Mere
+                            <br>
+                            <span>Kishore Kumar</span>
+                        </p>
+                    </div>
+
+                    <!-- Add more song cards similarly -->
+                    <div class="song-card" data-src="./songs/Janu Meri Jaan - Shaan 128 Kbps.mp3" data-name="Janu Meri Jaan" data-img="./assets/Janu.jpg">
+                        <img src="./assets/Janu.jpg" alt="janu meri jaan">
+                        <p>Janu Meri Jaan<br><span>Kishore Kumar & Mohammad Rafi</span></p>
+                    </div>
+
+                    <div class="song-card" data-src="./songs/Hothon Se Chhu Lo Tum (From Prem Geet) - Prem Geet 128 Kbps.mp3" data-name="Hothon Se Chu Lo" data-img="./assets/hothon.jpg">
+                        <img src="./assets/hothon.jpg" alt="Hothon">
+                        <p>Hothon Se Chu Lo<br><span>Jagjit Singh</span></p>
+                    </div>
+                    
+                    <div class="song-card" data-src="./songs/Chaiyya Chaiyya - Dil Se 128 Kbps.mp3" data-name="Chaiyya Chaiyya" data-img="./assets/chaiyya.jpg">
+                        <img src="./assets/chaiyya.jpg" alt="Chaiyya Chaiyya">
+                        <p>Chaiyya Chaiyya<br><span>Sukhwinder Singh & Sapna Awasthi</span></p>
+                    </div>
+
+                    <div class="song-card" data-src="./songs/Tera Hone Laga Hoon - Ajab Prem Ki Ghazab Kahani 128 Kbps.mp3" data-name="Tera Hone Laga Hoon" data-img="./assets/tera.jpg">
+                        <img src="./assets/tera.jpg" alt="Tera Hone Laga Hoon">
+                        <p>Tera Hone Laga Hoon<br><span>Atif Aslam & Alisha Chinai</span></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Now Playing Bar -->
+        <footer class="now-playing-bar">
+            <div class="now-playing-song">
+                <img src="./assets/sanam.jpg" alt="Song Image">
+                <div class="song-info">
+                    <h4>O Sanam</h4>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <input type="range" class="music-slider" min="0" max="100" value="0" step="1">
+                <div class="time-display">
+                    <span class="current-time" style="font-weight: 600;">0:00</span>
+                    <span class="total-time" style="font-weight: 600;">3:45</span>
+                </div>
+            </div>
+
+            <div class="volume-control">
+                <button class="volume-btn">
+                    <img src="./assets/volume-up.png" class="volume-bu" alt="Volume Icon" style="filter: invert(1);">
+                </button>
+
+                <div class="volume-popup" id="volumePopup">
+                    <input type="range" class="volume-slider" min="0" max="100" value="100" onclick="updateVolumeIcon()">
+                </div>
+            </div>
+
+            <!-- Audio Player -->
+            <audio id="audioPlayer" src=""></audio>
+
+            <div class="controls">
+                <button class="playback-btn prev-btn">
+                    <img src="./assets/previous.png" alt="">
+                </button>
+                <button class="playback-btn play-btn">
+                    <img src="./assets/play-button.png" alt="" style="height: 35px; width: 35px;">
+                </button>
+                <button class="playback-btn next-btn">
+                    <img src="./assets/next.png" alt="">
+                </button>
+            </div>
+
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

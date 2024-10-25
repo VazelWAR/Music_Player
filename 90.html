@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>RhythmoTune</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li class="side-icons">
+                        <img src="./assets/house.png" alt="">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <!-- <li class="side-icons">
+                        <img src="./assets/menu.png" alt="">
+                        <a href="#">Categories</a>
+                    </li> -->
+                    <!-- <li class="side-icons">
+                        <img src="./assets/people.png" alt="">
+                        <a href="#">Artists</a>
+                    </li> -->
+                </ul>
+            </nav>
+            <div class="playlists">
+                <h3>Playlists</h3>
+                <ul>
+                    <li><a href="./80.html">80's Hits</a></li>
+                    <li><a href="./90.html">90's Hits</a></li>
+                    <li><a href="./00.html">00's Hits</a></li>
+                    
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Playlist Album Cover -->
+            <!-- <div class="playlist-cover">
+                <img src="./assets/80.jpg" alt="Album Cover" class="playlist-img">
+            </div> -->
+
+            <h1 style="text-align: center; margin-top: 10px; color: #ffaf40;">90's Bollywood Hits</h3>
+
+            <!-- Song List -->
+            <div class="song-list">
+                <h3>Top Songs</h3>
+                <div class="song-cards">
+                    <div class="song-card" data-src="./songs/Ek Din Aap - Yes Boss 128 Kbps.mp3" data-name="Ek Din Aap" data-img="./assets/ek.jpg">
+                        <img src="./assets/ek.jpg" alt="Song One">
+                        <p>Ek Din Aap</p>
+                    </div>
+                    <div class="song-card" data-src="./songs/O Sanam - Sunoh 128 Kbps.mp3" data-name="O Sanam" data-img="./assets/sanam.jpg">
+                        <img src="./assets/sanam.jpg" alt="Song Two">
+                        <p>O Sanam</p>
+                    </div>
+                    <div class="song-card" data-src="./songs/Chaiyya Chaiyya - Dil Se 128 Kbps.mp3" data-name="Chaiyya Chaiyya" data-img="./assets/chaiyya.jpg">
+                        <img src="./assets/chaiyya.jpg" alt="Song Three">
+                        <p>Chaiyya Chaiyya</p>
+                    </div>
+                    <div class="song-card" data-src="./songs/Ek Din Aap - Yes Boss 128 Kbps.mp3" data-name="Ek Din Aap" data-img="./assets/ek.jpg">
+                        <img src="./assets/ek.jpg" alt="Song One">
+                        <p>Ek Din Aap</p>
+                    </div>
+                </div>
+
+                <div class="song-cards">
+                    <div class="song-card" data-src="./songs/Ek Din Aap - Yes Boss 128 Kbps.mp3" data-name="Ek Din Aap" data-img="./assets/ek.jpg">
+                        <img src="./assets/ek.jpg" alt="Song One">
+                        <p>Ek Din Aap</p>
+                    </div>
+                    <div class="song-card" data-src="./songs/O Sanam - Sunoh 128 Kbps.mp3" data-name="O Sanam" data-img="./assets/sanam.jpg">
+                        <img src="./assets/sanam.jpg" alt="Song Two">
+                        <p>O Sanam</p>
+                    </div>
+                    <div class="song-card" data-src="./songs/Chaiyya Chaiyya - Dil Se 128 Kbps.mp3" data-name="Chaiyya Chaiyya" data-img="./assets/chaiyya.jpg">
+                        <img src="./assets/chaiyya.jpg" alt="Song Three">
+                        <p>Chaiyya Chaiyya</p>
+                    </div>
+                    <div class="song-card" data-src="./songs/Ek Din Aap - Yes Boss 128 Kbps.mp3" data-name="Ek Din Aap" data-img="./assets/ek.jpg">
+                        <img src="./assets/ek.jpg" alt="Song One">
+                        <p>Ek Din Aap</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="now-playing-bar">
+        <div class="now-playing-song">
+            <img src="./assets/sanam.jpg" alt="Song Image">
+            <div class="song-info">
+                <h4>O Sanam</h4>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <input type="range" class="music-slider" min="0" max="100" value="0" step="1">
+            <div class="time-display">
+                <span class="current-time" style="font-weight: 600;">0:00</span>
+                <span class="total-time" style="font-weight: 600;">3:45</span>
+            </div>
+        </div>
+
+        <div class="volume-control">
+            <button class="volume-btn">
+                <img src="./assets/volume-up.png" class="volume-bu" alt="Volume Icon" style="filter: invert(1);">
+            </button>
+
+            <div class="volume-popup" id="volumePopup">
+                <input type="range" class="volume-slider" min="0" max="100" value="100" onclick="updateVolumeIcon()">
+            </div>
+        </div>
+
+        <!-- Audio Player -->
+        <audio id="audioPlayer" src=""></audio>
+
+        <div class="controls">
+            <button class="playback-btn prev-btn">
+                <img src="./assets/previous.png" alt="">
+            </button>
+            <button class="playback-btn play-btn">
+                <img src="./assets/play-button.png" alt="" style="height: 35px; width: 35px;">
+            </button>
+            <button class="playback-btn next-btn">
+                <img src="./assets/next.png" alt="">
+            </button>
+        </div>
+
+    </footer>
+
+    <script src="page.js"></script>
+</body>
+</html>
